@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".User_Login"
+    android:background="#F1F1F1">
+    <ImageView
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:src="@drawable/transbatam_logo"
+        android:layout_gravity="center"
+        android:background="#f1f1f1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="@color/primaryTextColor"
+        android:layout_marginLeft="19pt"
+
+
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+
+
+            android:background="@color/colorPrimary"
+
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_weight="1.36">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TRANS BATAM"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:paddingTop="10pt"
+                android:paddingBottom="10pt"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:paddingTop="20dp"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            android:background="@color/colorAccent"
+
+            android:text="Login"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

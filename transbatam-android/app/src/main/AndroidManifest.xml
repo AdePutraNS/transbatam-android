@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tugaspipl.transbatam">
+
+    <permission
+        android:name="tugaspipl.transbatam.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="tugaspipl.transbatam.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAaO-scaZad00TZWSRHw3wpM6SR_2LKDgY" />
+
+        <activity android:name=".User_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".User_Dashboard" />
+        <activity android:name=".User_Naikbus" />
+        <activity android:name=".User_Naikbus_Report" />
+        <activity android:name=".User_Naikbus_Tujuan" />
+        <activity android:name=".User_Profile" />
+        <activity android:name=".User_Saldo" />
+        <activity android:name=".User_Jadwal" />
+        <activity android:name=".User_Riwayat" />
+        <activity android:name=".User_Riwayat_Perjalanan" />
+        <activity android:name=".User_Setting" />
+        <activity android:name=".User_About" />
+    </application>
+
+</manifest>

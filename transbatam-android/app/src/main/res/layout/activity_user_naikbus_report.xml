@@ -1,0 +1,85 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".User_Naikbus_Report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:measureWithLargestChild="false"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Anda Telah Selesai Melakukan Perjalanan"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="8pt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/asal_tujuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="6pt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/koridor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="6pt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tarif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text="Tunggu Sebentar"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/saldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:textSize="9pt"
+            />
+        <View
+            android:id="@+id/View1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#448AFF" />
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_header"
+        app:menu="@menu/item_navigasi" />
+</android.support.v4.widget.DrawerLayout>

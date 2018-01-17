@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">"Trans Batam"</string>
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Cari Halte!</string>
+    <string name="navigation_view_item_2">Naik Bus!</string>
+    <string name="navigation_view_item_3">Profil</string>
+    <string name="navigation_view_item_4">Saldo</string>
+    <string name="navigation_view_item_5">Lihat Jadwal</string>
+    <string name="navigation_view_item_6">Riwayat Transaksi</string>
+    <string name="navigasi_kategori_2">Lainnya</string>
+    <string name="navigation_view_item_7">Pengaturan</string>
+    <string name="navigation_view_item_8">Tentang Kami</string>
+    <string name="navigation_view_item_9">Logout</string>
+    <string name="navigation_view_item_tambahan">Riwayat Perjalanan</string>
+    <string name="contoh_drawer_teks">udah bisa pake drawer dongggggggggg</string>
+    <string name="title_activity_user_halte">Map</string>
+    <string name="title_activity_user_riwayat_transaksi">activity_user_riwayat_transaksi</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
